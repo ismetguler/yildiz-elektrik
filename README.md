@@ -8,8 +8,7 @@ Bu depo, [YILDIZ ELEKTRİK]'in kurumsal web sitesi kaynak kodlarını içerir.
 
 Siteye doğrudan erişmek için aşağıdaki bağlantıyı kullanabilirsiniz:
 
-[SİTE LİNKİNİZ BURAYA GELECEK]
-*(Örnek: https://ismetguler.github.io/yildiz-elektrik/)*
+*https://ismetguler.github.io/yildiz-elektrik/*
 
 ## 🛠️ Kullanılan Teknolojiler
 
