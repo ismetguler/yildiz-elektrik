@@ -27,6 +27,6 @@ Bu proje, hızlı ve sade bir sunum için modern web standartları kullanılarak
 
 ## ✍️ Katkıda Bulunanlar
 
-Bu projenin başlangıç geliştirme ve canlı yayına alma süreçleri [Senin Adın/Kullanıcı Adın] tarafından yönetilmiştir.
+Bu projenin başlangıç geliştirme ve canlı yayına alma süreçleri [İsmet Güler/ismetguler] tarafından yönetilmiştir.
 
 * GitHub: [@ismetguler](https://github.com/ismetguler)
