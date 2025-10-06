@@ -56,7 +56,8 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 20px;
+        /* HEADER YÜKSEKLİĞİ AYARLANDI: Daha ince bir menü için padding düşürüldü */
+        padding: 10px 20px;
     }
 
 /* LOGO GRUBU STİLLERİ (Görsel + Metin) */
@@ -73,16 +74,15 @@ header {
 }
 
 .header-logo {
-    height: 45px;
+    height: 40px; /* Logo boyutu küçültülerek header yüksekliği azaltıldı */
     width: auto;
     margin-right: 12px;
-    /* Logo rengi laciverte uyması için hafif beyaz gölge korundu */
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
 }
 
 .logo-text {
     color: white;
-    font-size: 2.0em;
+    font-size: 1.8em; /* Metin biraz küçültüldü */
     font-weight: 700;
 }
 
@@ -98,7 +98,7 @@ nav ul {
     nav ul li a {
         color: white;
         text-decoration: none;
-        padding: 10px 15px;
+        padding: 8px 12px; /* Menü paddingi küçültüldü */
         font-weight: 500;
         transition: background-color 0.3s;
         border-radius: 5px;
@@ -116,6 +116,8 @@ header.sticky {
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* STICKY HEADER YÜKSEKLİĞİ AYARLANDI */
+    padding: 5px 0; /* Çok daha küçük bir sticky menü için */
 }
 
 /* AÇILIŞ EKRANI (SPLASH SCREEN) STİLLERİ */
@@ -159,7 +161,6 @@ header.sticky {
 
 /* Hero Section (Karşılama Ekranı) */
 #hero {
-    /* Arka Plan Artık Lacivert Tonlu */
     background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('hero_bg.jpg') no-repeat center center;
     background-size: cover;
     padding: 100px 0;
@@ -418,105 +419,56 @@ footer {
 
 
 /**************************************************/
-/* MOBİL UYUMLULUK (RESPONSIVE) BAŞLANGICI       */
+/* MOBİL UYUMLULUK (RESPONSIVE) KALDIRILDI VE DÜZELTİLDİ */
+/* PC GÖRÜNÜMÜNÜ TAKLİT ETME AMACIYLA @media blokları temizlendi */
 /**************************************************/
 
 /* Tabletler için (992px ve altı) */
 @media (max-width: 992px) {
-    /* Header (Menü daralır) */
-    .header-logo {
-        height: 40px;
-    }
-
-    .logo-text {
-        font-size: 1.6em;
-    }
-
-    nav ul li a {
-        padding: 8px 10px;
-    }
-
-    /* Hizmetler 2 sütun olur */
+    /* Buradaki ayarlar, masaüstü görünümünü korumak adına temizlendi */
     .hizmet-item {
-        width: 45%;
+        width: 45%; /* İki sütun kalsın, alt alta geçmesin */
     }
 
-    /* Referanslar 2 sütun olur */
     .reference-item {
-        width: 45%;
+        width: 45%; /* İki sütun kalsın, alt alta geçmesin */
     }
 }
 
 /* Cep Telefonları için (768px ve altı) */
 @media (max-width: 768px) {
-    /* Başlıklar küçültülür */
-    h2 {
-        font-size: 2em;
-    }
+    /* Cep telefonu ayarları SİLİNDİ. PC görünümünü zorlamak için media query'nin gücü kırıldı. */
 
-    h3 {
-        font-size: 1.5em;
-    }
-
-    /* Header (Menü ve Logo alt alta gelir) */
+    /* Header (Menü ve Logo alt alta gelme İPTAL EDİLDİ) */
     header .container {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px 10px;
-    }
-
-    .logo {
-        margin-bottom: 10px;
+        /* Eski flex-direction: column; satırları kaldırıldı */
+        flex-direction: row; /* Yan yana kalmaya zorla */
     }
 
     nav ul {
-        flex-direction: column;
-        width: 100%;
+        /* Eski flex-direction: column; satırları kaldırıldı */
+        flex-direction: row; /* Yan yana kalmaya zorla */
     }
 
-        nav ul li {
-            width: 100%;
-        }
-
-            nav ul li a {
-                display: block;
-                width: 100%;
-                text-align: center;
-                margin: 2px 0;
-                background-color: rgba(0, 0, 0, 0.1);
-            }
-
-    /* Hero Section padding artırılır */
-    #hero {
-        padding: 60px 0;
-    }
-
-    /* Hizmetler 1 sütun olur */
+    /* Hizmetler ve Referanslar ikişer sütun kalmaya zorlandı */
     .hizmet-item {
-        width: 90%;
-        margin: 10px auto;
+        width: 45%;
     }
 
-    /* Referanslar 1 sütun olur */
     .reference-item {
-        width: 90%;
-        margin: 10px auto;
-        padding-left: 20px;
+        width: 45%;
     }
 
-        .reference-item::before {
-            display: none;
-        }
-
-    /* Footer */
-    footer p {
-        text-align: center;
+    /* Hemen Ara Çubuğu Gizlendi (İstediğin gibi büyük butonu kaldırdık) */
+    #fixed-call-bar {
+        display: none !important;
     }
 }
 
+
 /* Aşırı küçük telefonlar için (480px ve altı) */
 @media (max-width: 480px) {
-    /* Açılış logosu biraz küçültülür */
+    /* Açılış logosu küçültülür */
     .splash-logo {
         height: 150px;
     }
@@ -589,47 +541,7 @@ footer {
 /**************************************************/
 /* SABİT MOBİL İLETİŞİM ÇUBUĞU (FIXED CALL BAR) */
 /**************************************************/
+/* Mobil buton kaldırıldığı için bu kısım gizlendi */
 #fixed-call-bar {
-    display: none; /* Varsayılan olarak gizliyoruz, sadece mobilde görünecek */
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--primary-color); /* Lacivert zemin */
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    padding: 10px 15px;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 3px solid var(--secondary-color); /* Turuncu çizgi ile vurgu */
-}
-
-.call-btn {
-    display: block;
-    width: 100%;
-    background-color: var(--secondary-color); /* Canlı Turuncu buton */
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: background-color 0.2s;
-}
-
-    .call-btn:hover {
-        background-color: #e65c00; /* Daha koyu turuncu hover */
-    }
-
-    .call-btn::before {
-        content: '📞 '; /* Telefon ikonu eklendi */
-        margin-right: 5px;
-    }
-
-/* 768px ve altı cihazlar için iletişim çubuğunu görünür yap */
-@media (max-width: 768px) {
-    #fixed-call-bar {
-        display: flex; /* Mobilde görünür */
-    }
+    display: none !important;
 }
