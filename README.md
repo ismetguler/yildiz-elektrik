@@ -1,31 +1,28 @@
-# ⚡ YILDIZ ELEKTRİK | Kurumsal Web Sitesi
+# ⚡ Yıldız Elektrik — Business Website
 
-Bu depo, [YILDIZ ELEKTRİK]'in kurumsal web sitesi kaynak kodlarını içerir.
+> A responsive landing-page website for an electrical-services business.
 
-[YILDIZ ELEKTRİK], modern çözümler ve güvenilir hizmet anlayışıyla elektrik taahhüt, tesisat yenileme ve acil arıza konularında sektörün önde gelen firmalarından biridir.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-## 🚀 Canlı Site Adresi (GitHub Pages)
+## About
 
-Siteye doğrudan erişmek için aşağıdaki bağlantıyı kullanabilirsiniz:
+A clean, mobile-friendly landing-page website for an electrical-services business — services overview, contact details and a professional presence that helps a local business get found online.
 
-*https://ismetguler.github.io/yildiz-elektrik/*
+## Features
 
-## 🛠️ Kullanılan Teknolojiler
+- 📱 Fully responsive (mobile-first) layout
+- 🧾 Services / about / contact sections
+- ⚡ Fast, lightweight, no heavy dependencies
 
-Bu proje, hızlı ve sade bir sunum için modern web standartları kullanılarak geliştirilmiştir.
+## Tech stack
 
-* **HTML5:** Sayfa yapısı ve içeriğin oluşturulması.
-* **CSS3:** Tamamen özelleştirilmiş, şirket renklerine (Lacivert, Turuncu) uygun kurumsal tasarım.
-* **Vanilla JavaScript:** Menü yapışkanlığı (Sticky Header) ve açılış ekranı (Splash Screen) gibi küçük etkileşimler için kullanılmıştır.
+- **HTML5 / CSS3 / JavaScript**
 
-## ✨ Proje Özellikleri
+## View locally
 
-* **Kurumsal Kimlik:** Lacivert ve Turuncu renk paleti ile profesyonel görünüm.
-* **Tek Sayfa Yapısı:** Tüm önemli bilgiler (Hizmetler, Hakkımızda, Referanslar, İletişim) tek bir akışta sunulur.
-* **Temiz ve Hızlı:** Hafif yapısı sayesinde hızlı yüklenme performansı.
+Just open `index.html` in your browser.
 
-## ✍️ Katkıda Bulunanlar
-
-Bu projenin başlangıç geliştirme ve canlı yayına alma süreçleri [İsmet Güler/ismetguler] tarafından yönetilmiştir.
-
-* GitHub: [@ismetguler](https://github.com/ismetguler)
+---
+Made by [İsmet Güler](https://github.com/ismetguler) · [Portfolio](https://ismetguler.github.io)
